@@ -32,17 +32,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${satoshi.variable} antialiased`}>
-        {/* navbar */}
-        <div>
-          <Navbar />
-        </div>
-
-        <div className="w-full max-w-[1440px]">{children}</div>
-
-        {/* footer */}
-        <div>
+        <main className="mx-auto w-full max-w-[1440px]">
+          <div className="relative">
+            <div className="absolute top-0 right-0 left-0 z-50">
+              <Navbar />
+            </div>
+            {children}
+          </div>
           <Footer />
-        </div>
+        </main>
       </body>
     </html>
   );

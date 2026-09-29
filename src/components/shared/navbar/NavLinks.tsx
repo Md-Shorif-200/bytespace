@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const links = [
+export const navLinks = [
   { name: "Home", href: "/" },
   { name: "Courses", href: "/courses" },
   { name: "Creators", href: "/creators" },
@@ -8,12 +8,12 @@ const links = [
 
 const NavLinks = () => {
   return (
-    <ul className="hidden items-center gap-6 md:flex ">
-      {links.map((link) => (
+    <ul className="hidden items-center gap-6 md:flex">
+      {navLinks.map((link) => (
         <li key={link.name}>
           <Link
             href={link.href}
-            className="inline-block font-satoshi font-medium text-[16px] text-muted transition duration-300 hover:-translate-y-1 hover:text-white"
+            className="inline-block font-satoshi text-[16px] font-medium text-muted transition duration-300 hover:-translate-y-1 hover:text-white"
           >
             {link.name}
           </Link>

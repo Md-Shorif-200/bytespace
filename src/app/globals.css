@@ -4,7 +4,7 @@
   --color-primary: #d4fb20;
   --color-secondary: #040819;
   --color-accent: #003be2;
-  /* --color-dark: #1a1a1a; */
+  --color-dark: #242528;
   --color-muted: #f5f5f6;
   /* --color-light: #f5f5f6; */
 
@@ -16,4 +16,12 @@ body {
   background: #ffffff;
   color: var(--color-dark);
   font-family: var(--font-satoshi-loaded), sans-serif;
+}
+
+.banner-bg {
+  background-color: #003be2;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 56px 56px;
 }
