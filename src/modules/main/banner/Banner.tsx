@@ -13,28 +13,28 @@ const men_img = "/image/banner/men_img.png";
 
 const Banner = () => {
   return (
-    <section className="banner-bg relative h-[904px] overflow-hidden">
+    <section className="banner-bg relative h-[780px] sm:h-[904px] overflow-hidden">
       <Image
         src={ractanguler_shape_img}
         alt=""
         width={1440}
         height={804}
-        className="pointer-events-none absolute z-10 inset-x-0 bottom-0 h-auto w-full"
+        className="pointer-events-none absolute xl:z-10 inset-x-0 bottom-0 h-auto w-full"
         priority
       />
 
-      <Container className="relative z-20 pt-[140px] text-center">
+      <Container className="relative z-20 pt-24 sm:pt-30 lg:pt-35 text-center">
         {/* Main hero text */}
-        <h1 className="mx-auto max-w-[935px] font-poppins text-[72px] font-bold leading-tight text-[#FFFFFF]">
+        <h1 className=" heading_l  max-w-[935px] mx-auto   text-[#FFFFFF]">
           Get Access to Hundreds Courses Available
         </h1>
 
-        <p className="mx-auto mt-4 max-w-[819px] font-satoshi  leading-relaxed text-[#E5E6E8] text-[14px">
+        <p className=" body_l  mt-4 max-w-[819px] mx-auto  text-[#E5E6E8] ">
           Unlock your creativity, gain valuable knowledge, and grow your
           business with our wide range of courses.
         </p>
 
-        <div className="mx-auto mt-8 flex w-full max-w-[580px] flex-col items-center gap-3 sm:flex-row">
+        <div className=" mt-8 flex w-full max-w-[580px] mx-auto flex-col items-center gap-3 min-[450px]:flex-row">
           {/* Search field and button */}
           <div className="w-full min-w-0 flex-1">
             <CustomInput />
@@ -59,19 +59,19 @@ const Banner = () => {
           alt="Student with laptop"
           width={630}
           height={541}
-          className="relative z-10 left-[25%] h-auto "
+          className="relative z-10 left-[5%] min-[700px]:left-[10%] md:left-[15%] lg:left-[25%] h-auto "
           priority
         />
 
-        <div className="absolute top-[22%] left-[22%] z-20 hidden md:block">
+        <div className="absolute top-[24%] lg:top-[22%] left-[10%] min-[700px]:left-[15%] md:left-[18%] lg:left-[22%]  z-20 hidden sm:block">
           <UiUxCard />
         </div>
 
-        <div className="absolute bottom-[9%] left-[17%] z-20 hidden md:block">
+        <div className="absolute bottom-[12%] lg:bottom-[9%] left-[2%] lg:left-[17%] z-20 hidden sm:block">
           <HappyStudentsCard />
         </div>
 
-        <div className="absolute top-[26%] right-[21%] z-20 hidden md:block">
+        <div className="absolute top-[33%] lg:top-[28%]  xl:top-[26%] right-[8%] min-[650px]:right-[12%] min-[700px]:right-[10%] min-[800px]:right-[12%] min-[850px]:right-[18%] min-[900px]:right-[20%] min-[950px]:right-[25%] lg:right-[21%]  z-20 hidden sm:block">
           <LearningProgressCard />
         </div>
       </div>

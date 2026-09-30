@@ -20,7 +20,7 @@ const Navbar = () => {
   const closeSheet = () => setIsOpen(false);
 
   return (
-    <nav className="h-[120px]">
+    <nav className="h-[80px] lg:h-[120px]">
       <Container className="h-full">
         <div className="flex h-full items-center justify-between">
           {/* Brand logo */}

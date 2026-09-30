@@ -15,7 +15,7 @@
 
 @layer utilities {
   .heading_l {
-    @apply font-poppins font-semibold text-[72px] leading-[1.2];
+    @apply font-poppins font-semibold text-[36px] sm:text-[44px] lg:text-[60px] xl:text-[72px] leading-[1.2];
   }
 
   .heading_m {
@@ -31,7 +31,7 @@
   }
 
   .body_l {
-    @apply font-satoshi font-normal text-[18px] leading-[1.6];
+    @apply font-satoshi font-normal text-[14px] sm:text-[16px] lg:text-[18px] leading-[1.6];
   }
 
   .body_m {
