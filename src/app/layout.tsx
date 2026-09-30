@@ -20,8 +20,8 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Bytespace",
-  description: "Bytespace is a platform for learning and growing",
+  title: "Bytespace New",
+  description: "ByteSpace New is a platform for learning and growing",
 };
 
 export default function RootLayout({

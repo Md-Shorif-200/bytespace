@@ -8,18 +8,22 @@ import Container from "@/components/common/Container";
 import Sheet from "@/components/common/Sheet";
 import NavLinks, { navLinks } from "./NavLinks";
 
+// Brand logo and cart icon assets
 const navLogo = "/image/navbar/logo.svg";
 const navShoppingBagIcon = "/image/navbar/shopping-bag.svg";
 
 const Navbar = () => {
+  // Controls the mobile menu sheet visibility
   const [isOpen, setIsOpen] = useState(false);
 
+  // Close the mobile menu
   const closeSheet = () => setIsOpen(false);
 
   return (
     <nav className="h-[120px]">
       <Container className="h-full">
         <div className="flex h-full items-center justify-between">
+          {/* Brand logo */}
           <Link href="/">
             <Image
               src={navLogo}
@@ -33,6 +37,7 @@ const Navbar = () => {
 
           <NavLinks />
 
+          {/* Desktop navigation actions */}
           <div className="hidden items-center gap-6 text-[16px] md:flex">
             <Link href="/sign-in" className="text-muted hover:text-white">
               Sign In
@@ -51,6 +56,7 @@ const Navbar = () => {
             </Link>
           </div>
 
+          {/* Mobile menu trigger */}
           <button
             type="button"
             aria-label="Open menu"
@@ -63,6 +69,7 @@ const Navbar = () => {
       </Container>
 
       <Sheet isOpen={isOpen} onClose={closeSheet}>
+        {/* Mobile menu header */}
         <div className="flex items-center justify-between border-b border-white/20 px-5 py-4">
           <p className="font-satoshi text-[18px] font-bold text-white">Menu</p>
           <button
@@ -75,6 +82,7 @@ const Navbar = () => {
           </button>
         </div>
 
+        {/* Navigation links in the mobile menu */}
         <ul className="flex flex-col gap-1 p-4">
           {navLinks.map((link) => (
             <li key={link.name}>
@@ -89,6 +97,7 @@ const Navbar = () => {
           ))}
         </ul>
 
+        {/* Account and cart actions */}
         <div className="mt-auto border-t border-white/20 p-4">
           <Link
             href="/sign-in"
@@ -117,7 +126,9 @@ const Navbar = () => {
               height={24}
               className="h-5 w-5"
             />
-            <span className="font-satoshi text-[16px] font-medium text-white">Cart</span>
+            <span className="font-satoshi text-[16px] font-medium text-white">
+              Cart
+            </span>
           </Link>
         </div>
       </Sheet>

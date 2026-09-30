@@ -12,7 +12,58 @@
   --font-poppins: var(--font-poppins-loaded), sans-serif;
 }
 
-body {
+
+@layer utilities {
+  .heading_l {
+    @apply font-poppins font-semibold text-[72px] leading-[1.2];
+  }
+
+  .heading_m {
+    @apply font-poppins font-semibold text-[44px] leading-[1.2];
+  }
+
+  .heading_s {
+    @apply font-poppins font-semibold text-[36px] leading-[1.2];
+  }
+
+  .heading_xs {
+    @apply font-poppins font-semibold text-[20px] leading-[1.2];
+  }
+
+  .body_l {
+    @apply font-satoshi font-normal text-[18px] leading-[1.6];
+  }
+
+  .body_m {
+    @apply font-satoshi font-normal text-[16px] leading-[1.6];
+  }
+
+  .body_s {
+    @apply font-satoshi font-normal text-[14px] leading-[1.6];
+  }
+
+  .body_xs {
+    @apply font-satoshi font-normal text-[12px] leading-[1.6];
+  }
+
+  .label_l {
+    @apply font-satoshi font-medium text-[18px]  leading-[1.2];
+  }
+
+  .label_m {
+    @apply font-satoshi font-medium text-[16px] leading-[1.2];
+  }
+
+  .label_s {
+    @apply font-satoshi font-medium text-[14px] leading-[1.2];
+  }
+
+  .label_xs {
+    @apply font-satoshi font-medium text-[12px] leading-[1.2];
+  }
+}
+
+body_ {
   background: #ffffff;
   color: var(--color-dark);
   font-family: var(--font-satoshi-loaded), sans-serif;
@@ -28,4 +79,7 @@ body {
 
 .custom_padding_t {
   @apply pt-8 lg:pt-16;
+}
+.custom_margin_t {
+  @apply mt-8 lg:mt-16;
 }

@@ -6,6 +6,7 @@ import UiUxCard from "./cards/UiUxCard";
 import HappyStudentsCard from "./cards/HappyStudentsCard";
 import LearningProgressCard from "./cards/LearningProgressCard";
 
+// Banner background and hero images
 const ractanguler_shape_img = "/image/banner/rectanguler_shape.png";
 const rounded_shape_img = "/image/banner/rounded_shape.png";
 const men_img = "/image/banner/men_img.png";
@@ -23,16 +24,18 @@ const Banner = () => {
       />
 
       <Container className="relative z-20 pt-[140px] text-center">
+        {/* Main hero text */}
         <h1 className="mx-auto max-w-[935px] font-poppins text-[72px] font-bold leading-tight text-[#FFFFFF]">
           Get Access to Hundreds Courses Available
         </h1>
 
         <p className="mx-auto mt-4 max-w-[819px] font-satoshi  leading-relaxed text-[#E5E6E8] text-[14px">
-          Unlock your creativity, gain valuable knowledge, and grow your business
-          with our wide range of courses.
+          Unlock your creativity, gain valuable knowledge, and grow your
+          business with our wide range of courses.
         </p>
 
         <div className="mx-auto mt-8 flex w-full max-w-[580px] flex-col items-center gap-3 sm:flex-row">
+          {/* Search field and button */}
           <div className="w-full min-w-0 flex-1">
             <CustomInput />
           </div>
@@ -41,6 +44,7 @@ const Banner = () => {
       </Container>
 
       <div className="absolute bottom-0 left-1/2 z-0 w-full max-w-[1149px] -translate-x-1/2">
+        {/* Hero illustration and floating cards */}
         <Image
           src={rounded_shape_img}
           alt=""
