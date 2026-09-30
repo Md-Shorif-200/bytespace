@@ -13,8 +13,8 @@ const avatars = [
 
 const HappyStudentsCard = () => {
   return (
-    <div className="h-[121px] w-[245px] rounded-2xl bg-white p-4 shadow-lg">
-      <h3 className="font-satoshi text-[16px] font-medium text-dark">
+    <div className=" w-[200px] lg:w-[245px]  h-[110px] lg:h-[121px] rounded-2xl bg-white p-3 lg:p-4 shadow-lg">
+      <h3 className="font-satoshi text-[14px] lg:text-[16px] font-medium text-dark">
         Happy Students
       </h3>
 
@@ -31,12 +31,12 @@ const HappyStudentsCard = () => {
             alt="Student"
             width={43}
             height={43}
-            className={`h-[43px] w-[43px] rounded-full border-2 border-white object-cover ${
+            className={` w-[38px] lg:w-[43px] h-[38px] lg:h-[43px] rounded-full border-2 border-white object-cover ${
               index > 0 ? "-ml-4" : ""
             }`}
           />
         ))}
-        <div className="-ml-4 flex h-[43px] w-[43px] shrink-0 items-center justify-center rounded-full border-2 border-white bg-primary font-satoshi text-[12px] font-bold text-dark">
+        <div className="-ml-4 flex  w-[38px] lg:w-[43px] h-[38px] lg:h-[43px] shrink-0 items-center justify-center rounded-full border-2 border-white bg-primary font-satoshi text-[12px] font-bold text-dark">
           2K+
         </div>
       </div>
