@@ -16,7 +16,7 @@ const features = [
 
 const CourseCreatorSection = () => {
   return (
-    <section className="relative overflow-hidden bg-transparent pb-18 pt-6">
+    <section className="relative overflow-hidden bg-transparent pb-18 ">
       <Container>
      
 

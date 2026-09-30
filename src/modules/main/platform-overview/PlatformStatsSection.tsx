@@ -12,7 +12,7 @@ const stats = [
 
 const PlatformStatsSection = () => {
   return (
-    <section className="relative overflow-hidden bg-transparent custom_margin_t pt-18 pb-10">
+    <section className="relative overflow-hidden bg-transparent custom_margin_t pt-18 ">
       <Container>
       
 
