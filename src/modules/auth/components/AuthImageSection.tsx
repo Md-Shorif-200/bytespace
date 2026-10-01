@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -15,6 +16,8 @@ const AuthImageSection = () => {
   const description = isLoginPage
     ? "Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge."
     : "The registration process is straightforward, uncomplicated, and efficient, allowing users to sign up quickly, easily, and at no cost";
+
+  const [imgLoaded, setImgLoaded] = useState(false);
 
   return (
     <div className="p-8 text-white md:p-12">
@@ -39,7 +42,8 @@ const AuthImageSection = () => {
           alt="courses preview"
           width={500}
           height={585}
-          className="h-auto w-full"
+          onLoadingComplete={() => setImgLoaded(true)}
+          className={`h-auto w-full transition-opacity duration-700 ease-out transform ${imgLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           priority
         />
       </div>
