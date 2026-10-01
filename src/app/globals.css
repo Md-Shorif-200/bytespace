@@ -19,7 +19,7 @@
   }
 
   .heading_m {
-    @apply font-poppins font-semibold text-[44px] leading-[1.2];
+    @apply font-poppins font-semibold text-[30px] sm:text-[36px]   xl:text-[44px] leading-[1.2];
   }
 
   .heading_s {

@@ -12,10 +12,10 @@ const HomePage = () => {
       <Banner />
       <BrandLogos />
       <FeaturedCoures />
-      {/* <LearningPath /> */}
-      {/* <PlatformOverviewSection /> */}
-      {/* <JoinAsCreator /> */}
-      {/* <ClientsReview /> */}
+      <LearningPath />
+      <PlatformOverviewSection />
+      <JoinAsCreator />
+      <ClientsReview />
     </div>
   );
 };
