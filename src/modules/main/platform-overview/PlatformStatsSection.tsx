@@ -1,7 +1,7 @@
 import Container from "@/components/common/Container";
 import Image from "next/image";
 
-const course_stats_img = "/image/course-stats/course_stats_img.png";
+const course_stats_img = "/image/course-stats/course_stats_img.webp";
 
 // Small data for the 3 numbers
 const stats = [
