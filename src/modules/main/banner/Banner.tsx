@@ -7,9 +7,9 @@ import HappyStudentsCard from "./cards/HappyStudentsCard";
 import LearningProgressCard from "./cards/LearningProgressCard";
 
 // Banner background and hero images
-const ractanguler_shape_img = "/image/banner/rectanguler_shape.png";
-const rounded_shape_img = "/image/banner/rounded_shape.png";
-const men_img = "/image/banner/men_img.png";
+const ractanguler_shape_img = "/image/banner/rectanguler_shape.webp";
+const rounded_shape_img = "/image/banner/rounded_shape.webp";
+const men_img = "/image/banner/men_img.webp";
 
 const Banner = () => {
   return (

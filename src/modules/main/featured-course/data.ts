@@ -1,12 +1,12 @@
 import { FeaturedCourseType, FeaturedCourseTabsType } from "./types";
 
 // course card images
-const featured_course_img_1 = "/image/featured-course/featured_course_1.png";
-const featured_course_img_2 = "/image/featured-course/featured_course_2.png";
-const featured_course_img_3 = "/image/featured-course/featured_course_3.png";
-const featured_course_img_4 = "/image/featured-course/featured_course_4.png";
-const featured_course_img_5 = "/image/featured-course/featured_course_5.png";
-const featured_course_img_6 = "/image/featured-course/featured_course_6.png";
+const featured_course_img_1 = "/image/featured-course/featured_course_1.webp";
+const featured_course_img_2 = "/image/featured-course/featured_course_2.webp";
+const featured_course_img_3 = "/image/featured-course/featured_course_3.webp";
+const featured_course_img_4 = "/image/featured-course/featured_course_4.webp";
+const featured_course_img_5 = "/image/featured-course/featured_course_5.webp";
+const featured_course_img_6 = "/image/featured-course/featured_course_6.webp";
 
 // students
 const student_1 =  "/image/banner/Ellipse.png";

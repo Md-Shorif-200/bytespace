@@ -69,16 +69,24 @@ const Navbar = () => {
       </Container>
 
       <Sheet isOpen={isOpen} onClose={closeSheet}>
-        {/* Mobile menu header */}
         <div className="flex items-center justify-between border-b border-white/20 px-5 py-4">
-          <p className="font-satoshi text-[18px] font-bold text-white">Menu</p>
+          <Link href="/" onClick={closeSheet} className="flex items-center">
+            <Image
+              src={navLogo}
+              alt="ByteSpace logo"
+              width={120}
+              height={26}
+              className="h-6 w-auto"
+            />
+          </Link>
+
           <button
             type="button"
             aria-label="Close menu"
             onClick={closeSheet}
-            className="text-white"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white transition hover:bg-white/10"
           >
-            <X size={24} />
+            <X size={18} />
           </button>
         </div>
 

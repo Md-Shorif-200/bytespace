@@ -2,7 +2,7 @@ import CustomPrimaryButton from "@/components/common/CustomPrimaryButton";
 import Image from "next/image";
 
 
-const section_banner = "/image/join-as-creator/section_banner_img.png";
+const section_banner = "/image/join-as-creator/section_banner_img.webp";
 
 const JoinAsCreator = () => {
   return (

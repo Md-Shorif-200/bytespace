@@ -2,7 +2,7 @@ import Container from "@/components/common/Container";
 import Image from "next/image";
 
 const course_creator_sidebar_img =
-  "/image/course-creator/course_creator_img.png";
+  "/image/course-creator/course_creator_img.webp";
 
 const chek_icon = "/image/course-creator/chek_icon.svg";
 
