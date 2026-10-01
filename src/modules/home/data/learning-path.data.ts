@@ -1,4 +1,4 @@
-import { LearningPathType } from "./types";
+import { LearningPathType } from "../types/learning-path.types";
 
 const learning_path_icon_1 = "/image/learning-paths/icon_1.svg";
 const learning_path_icon_2 = "/image/learning-paths/icon_2.svg";

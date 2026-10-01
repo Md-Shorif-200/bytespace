@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { LoginFormValues } from "../../types";
+import { LoginFormValues } from "../types/auth.types";
 
 const facebookIcon = "/image/auth/facebook_icon.svg";
 const googleIcon = "/image/auth/google_icon.svg";

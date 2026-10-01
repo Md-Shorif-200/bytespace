@@ -1,12 +1,9 @@
 import Container from "@/components/common/Container";
 import CustomTabs from "@/components/common/CustomTabs";
 import FeaturedCourseSectionHeading from "./FeaturedCourseSectionHeading";
-import FeaturedCourseCard from "./FeaturedCourseCard";
-import { coursesData, tabs } from "./data";
 
-
-
-
+import { featuredCoursesData, tabs } from "../../data/featured-course.data";
+import CourseCard from "./CourseCard";
 
 const FeaturedCourses = () => {
   return (
@@ -23,8 +20,8 @@ const FeaturedCourses = () => {
 
         {/* Grid Container for Cards */}
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 xl:gap-10  ">
-          {coursesData.map((course) => (
-            <FeaturedCourseCard key={course.id} course={course} />
+          {featuredCoursesData.map((course) => (
+            <CourseCard key={course.id} course={course} />
           ))}
         </div>
       </Container>

@@ -5,7 +5,7 @@ import CustomAuthButton from "@/components/common/CustomAuthButton";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { RegisterFormValues } from "../../types";
+import { RegisterFormValues } from "../types/auth.types";
 
 const RegisterForm = () => {
   const {

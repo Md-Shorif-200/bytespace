@@ -1,11 +1,11 @@
-import RegisterPage from "@/modules/auth/register/RegisterPage"
+import RegisterPage from "@/modules/auth/components/RegisterPage";
 
 const page = () => {
   return (
     <div>
-      <RegisterPage/>
+      <RegisterPage />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

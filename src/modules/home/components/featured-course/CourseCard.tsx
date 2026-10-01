@@ -1,17 +1,16 @@
-
 import Image from "next/image";
-import { FeaturedCourseType } from "./types";
+import { FeaturedCourseType } from "../../types/featured-courses.types";
 
-interface FeaturedCourseCardProps {
+interface CourseCardProps {
   course: FeaturedCourseType;
 }
 
 const star_icon = "/image/featured-course/star_icon.svg";
 
-const FeaturedCourseCard = ({ course }: FeaturedCourseCardProps) => {
+const CourseCard = ({ course }: CourseCardProps) => {
   return (
     // Main Card Container
-    <div className="w-full   border border-[#CED0D3] rounded-[24px] p-3 xl:p-4 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="w-full   border border-[#CED0D3] rounded-[24px] p-3 xl:p-4 bg-white  hover:shadow-xs transition-shadow duration-300">
       {/* Top Image Section with overlay badges */}
       <div className="relative w-full h-[195px] rounded-[12px] overflow-hidden">
         <Image
@@ -93,4 +92,4 @@ const FeaturedCourseCard = ({ course }: FeaturedCourseCardProps) => {
   );
 };
 
-export default FeaturedCourseCard;
+export default CourseCard;

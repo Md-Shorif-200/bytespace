@@ -1,6 +1,6 @@
 import Container from "@/components/common/Container";
 import Image from "next/image";
-import { reviews } from "./data";
+import { reviews } from "../../data/client-reviews.data";
 
 
 
