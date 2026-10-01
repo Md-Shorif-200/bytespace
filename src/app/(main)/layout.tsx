@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/shared/navbar/Navbar";
 import Footer from "@/components/shared/footer/Footer";
 
@@ -13,7 +13,7 @@ const poppins = Poppins({
 });
 
 const satoshi = localFont({
-  src: "./fonts/Satoshi-Variable.woff2",
+  src: "../fonts/Satoshi-Variable.woff2",
   weight: "300 900",
   variable: "--font-satoshi-loaded",
   display: "swap",
@@ -32,7 +32,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${satoshi.variable} antialiased`}>
-        {children}
+        <main className="mx-auto w-full max-w-[1440px]">
+          <div className="relative">
+            <div className="absolute top-0 right-0 left-0 z-50">
+              <Navbar />
+            </div>
+            {children}
+
+            
+          </div>
+          <Footer />
+        </main>
       </body>
     </html>
   );
