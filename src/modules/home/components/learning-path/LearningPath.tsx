@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Container from "@/components/common/Container";
 import CustomSectionHeading from "@/components/common/CustomSectionHeading";
-import { learningPaths } from "./data";
+import { learningPaths } from "../../data/learning-path.data";
 
 const LearningPath = () => {
   return (

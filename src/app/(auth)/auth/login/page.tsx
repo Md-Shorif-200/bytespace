@@ -1,4 +1,4 @@
-import LoginPage from "@/modules/auth/login/LoginPage"
+import LoginPage from "@/modules/auth/components/LoginPage"
 
 const page = () => {
   return (

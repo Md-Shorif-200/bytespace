@@ -1,4 +1,7 @@
-import { FeaturedCourseType, FeaturedCourseTabsType } from "./types";
+import {
+  FeaturedCourseType,
+  FeaturedCourseTabsType,
+} from "../types/featured-courses.types";
 
 // course card images
 const featured_course_img_1 = "/image/featured-course/featured_course_1.webp";
@@ -9,15 +12,12 @@ const featured_course_img_5 = "/image/featured-course/featured_course_5.webp";
 const featured_course_img_6 = "/image/featured-course/featured_course_6.webp";
 
 // students
-const student_1 =  "/image/banner/Ellipse.png";
-const student_2 =  "/image/featured-course/student_2.png";
+const student_1 = "/image/banner/Ellipse.png";
+const student_2 = "/image/featured-course/student_2.png";
 const student_3 = "/image/featured-course/student_3.png";
 const student_4 = "/image/featured-course/student_4.png";
 
-const studentAvatarsData = [
-    student_1,student_2,student_3,student_4
-]
-
+const studentAvatarsData = [student_1, student_2, student_3, student_4];
 
 // tabs
 export const tabs: FeaturedCourseTabsType = [
@@ -43,7 +43,7 @@ export const tabs: FeaturedCourseTabsType = [
 
 // featured courses
 // Array of 8 Course Objects
-export const coursesData: FeaturedCourseType[] = [
+export const featuredCoursesData: FeaturedCourseType[] = [
   {
     id: 1,
     title: "Learn Figma from Basic",
@@ -56,7 +56,7 @@ export const coursesData: FeaturedCourseType[] = [
     level: "Beginner",
     studentsCount: "26+",
     thumbnail: `${featured_course_img_1}`,
-    studentAvatars: studentAvatarsData
+    studentAvatars: studentAvatarsData,
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export const coursesData: FeaturedCourseType[] = [
     level: "Beginner",
     studentsCount: "26+",
     thumbnail: `${featured_course_img_2}`,
-    studentAvatars: studentAvatarsData
+    studentAvatars: studentAvatarsData,
   },
   {
     id: 3,
@@ -84,7 +84,7 @@ export const coursesData: FeaturedCourseType[] = [
     level: "Beginner",
     studentsCount: "260+",
     thumbnail: `${featured_course_img_3}`,
-    studentAvatars: studentAvatarsData
+    studentAvatars: studentAvatarsData,
   },
   {
     id: 4,
@@ -98,7 +98,7 @@ export const coursesData: FeaturedCourseType[] = [
     level: "Beginner",
     studentsCount: "26+",
     thumbnail: `${featured_course_img_4}`,
-    studentAvatars: studentAvatarsData
+    studentAvatars: studentAvatarsData,
   },
   {
     id: 5,
@@ -112,7 +112,7 @@ export const coursesData: FeaturedCourseType[] = [
     level: "Beginner",
     studentsCount: "26+",
     thumbnail: `${featured_course_img_5}`,
-    studentAvatars: studentAvatarsData
+    studentAvatars: studentAvatarsData,
   },
   {
     id: 6,
@@ -126,6 +126,6 @@ export const coursesData: FeaturedCourseType[] = [
     level: "Beginner",
     studentsCount: "26+",
     thumbnail: `${featured_course_img_6}`,
-    studentAvatars: studentAvatarsData
+    studentAvatars: studentAvatarsData,
   },
 ];
