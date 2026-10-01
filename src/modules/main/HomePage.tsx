@@ -10,8 +10,8 @@ const HomePage = () => {
   return (
     <div>
       <Banner />
-      {/* <BrandLogos /> */}
-      {/* <FeaturedCoures /> */}
+      <BrandLogos />
+      <FeaturedCoures />
       {/* <LearningPath /> */}
       {/* <PlatformOverviewSection /> */}
       {/* <JoinAsCreator /> */}

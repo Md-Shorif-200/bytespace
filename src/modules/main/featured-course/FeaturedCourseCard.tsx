@@ -11,7 +11,7 @@ const star_icon = "/image/featured-course/star_icon.svg";
 const FeaturedCourseCard = ({ course }: FeaturedCourseCardProps) => {
   return (
     // Main Card Container
-    <div className="w-[373px] border border-[#CED0D3] rounded-[24px] p-4 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className=" max-w-[373px] border border-[#CED0D3] rounded-[24px] p-3 xl:p-4 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
       {/* Top Image Section with overlay badges */}
       <div className="relative w-full h-[195px] rounded-[12px] overflow-hidden">
         <Image
@@ -25,7 +25,7 @@ const FeaturedCourseCard = ({ course }: FeaturedCourseCardProps) => {
       {/* Course Title & Rating Section */}
       <div className="mt-4 flex items-start justify-between gap-2">
         <div>
-          <h3 className="text-[20px] font-poppins font-bold text-[#000000] leading-tight">
+          <h3 className=" text-[16px] xl:text-[20px] font-poppins font-bold text-[#000000] leading-tight  capitalize">
             {course.title}
           </h3>
           <p className="text-[12px] text-[#4F4F4F] mt-1">

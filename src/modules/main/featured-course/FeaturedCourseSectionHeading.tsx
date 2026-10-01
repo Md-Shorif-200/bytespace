@@ -12,11 +12,7 @@ const FeaturedCourseSectionHeading = ({
   return (
     <div className="mx-auto max-w-[917px] text-center mb-16">
       <div className="flex flex-col items-center justify-center">
-        <h2
-          className={`font-poppins font-bold text-[#040819] leading-[1.2] tracking-[-0.01em] text-[44px]`}
-        >
-          {title_1}
-        </h2>
+        <h2 className={`heading_m text-[#040819]`}>{title_1}</h2>
 
         <h2
           className={`font-poppins font-bold text-[#040819] leading-[1.2] tracking-[-0.01em] text-[44px]`}
@@ -24,11 +20,7 @@ const FeaturedCourseSectionHeading = ({
           {title_2}
         </h2>
       </div>
-      <p
-        className={`mt-4 font-satoshi leading-[1.6] text-[#82868E] text-[18px]`}
-      >
-        {description}
-      </p>
+      <p className={` body_l mt-4 text-[#82868E]`}>{description}</p>
     </div>
   );
 };
