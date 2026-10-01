@@ -39,10 +39,10 @@ const Navbar = () => {
 
           {/* Desktop navigation actions */}
           <div className="hidden items-center gap-6 text-[16px] md:flex">
-            <Link href="/sign-in" className="text-muted hover:text-white">
+            <Link href="/auth/login" className="text-muted hover:text-white">
               Sign In
             </Link>
-            <Link href="/join" className="text-muted hover:text-white">
+            <Link href="/auth/register" className="text-muted hover:text-white">
               Join Us
             </Link>
             <Link href="/cart" aria-label="Cart">
@@ -100,14 +100,14 @@ const Navbar = () => {
         {/* Account and cart actions */}
         <div className="mt-auto border-t border-white/20 p-4">
           <Link
-            href="/sign-in"
+            href="/auth/login"
             onClick={closeSheet}
             className="block rounded-lg px-3 py-3 font-satoshi text-[16px] font-medium text-white hover:bg-white/10"
           >
             Sign In
           </Link>
           <Link
-            href="/join"
+            href="/auth/register"
             onClick={closeSheet}
             className="block rounded-lg px-3 py-3 font-satoshi text-[16px] font-medium text-white hover:bg-white/10"
           >
