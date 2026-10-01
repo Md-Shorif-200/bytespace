@@ -59,7 +59,7 @@ const Footer = () => {
       <Container>
         {/* main */}
         <Image src={logo} alt="ByteSpace" width={171} height={37} />
-        <div className="grid grid-cols-1  gap-[130px] md:grid-cols-2 mt-6">
+        <div className="grid grid-cols-1 gap-[60px]  xl:gap-[130px] md:grid-cols-2 mt-6">
           {/* left */}
           <div>
             <p className=" body_s text-[#242528]">
@@ -68,7 +68,7 @@ const Footer = () => {
             </p>
 
             {/* form */}
-            <div className="mt-6 flex items-center gap-5">
+            <div className="mt-6 flex flex-col min-[450px]:flex-row items-center gap-5 md:gap-2 lg:gap-5">
               <CustomInput
                 type="email"
                 placeholder="Enter your email"
@@ -94,7 +94,7 @@ const Footer = () => {
         </div>
 
         {/* footer meta */}
-        <div className="mt-[100px] flex flex-col gap-4 border-t border-[#E5E7EB] py-6 md:flex-row md:items-center md:justify-between">
+        <div className=" mt-[60px] xl:mt-[100px] flex flex-col gap-4 border-t border-[#E5E7EB] py-6 md:flex-row md:items-center md:justify-between">
           <p className="body_xs text-[#242528]">
             @ 2023 ByteSpace. All rights reserved.
           </p>

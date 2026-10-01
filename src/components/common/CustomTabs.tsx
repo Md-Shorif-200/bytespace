@@ -91,7 +91,7 @@ const TabButton = ({
   return (
     <button
       onClick={() => setActiveTab(tab)}
-      className={`h-[43px] rounded-[24px] px-5 text-[16px] font-medium leading-[120%] transition-all cursor-pointer whitespace-nowrap ${
+      className={`  h-[40px] lg:h-[43px] rounded-[24px] px-3 lg:px-5 text-[14px] lg:text-[16px] font-medium leading-[120%] transition-all cursor-pointer whitespace-nowrap ${
         activeTab === tab
           ? "bg-primary text-dark"
           : "bg-[#F5F5F6] text-[#4B4C53] hover:bg-gray-200"

@@ -16,30 +16,28 @@ const features = [
 
 const CourseCreatorSection = () => {
   return (
-    <section className="relative overflow-hidden bg-transparent pb-18 ">
+    <section className="relative overflow-hidden bg-transparent pb-10 xl:pb-18 lg:pt-10  ">
       <Container>
-     
-
         {/* main content */}
-        <div className="relative h-[596px] w-full grid items-center  gap-[63px]  md:grid-cols-2">
+        <div className="relative w-full h-220 md:h-120 xl:h-149 grid items-center  md:grid-cols-2 xl:gap-[63px]">
           {/* left side : image */}
-          <div className="relative h-full min-h-[420px] w-full">
+          <div className="relative order-2 w-full h-full md:order-1 min-h-[420px]">
             <Image
               src={course_creator_sidebar_img}
               alt="create and manage"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-contain object-right"
+              className="md:object-contain xl:object-right"
             />
           </div>
 
           {/* right side: text */}
-          <div>
-            <h2 className="heading_m text-dark">
+          <div className="order-1 md:order-2 my-10" >
+            <h2 className="font-poppins font-semibold text-[30px] sm:text-[36px] md:text-[28px]   xl:text-[44px] leading-[1.2] text-dark">
               Create &amp; Manage <br /> Courses Easily.
             </h2>
 
-            <p className="my-8 text-[18px] leading-[28px] text-[#4B4C53] font-normal   ">
+            <p className="my-8 text-[16px]   xl:text-[18px] leading-[22px] xl:leading-[28px] text-[#4B4C53] font-normal   ">
               <span className="font-semibold text-[#242528]">ByteSpace</span>{" "}
               supports individuals or entities in the creation, publication, and
               administration of educational courses.

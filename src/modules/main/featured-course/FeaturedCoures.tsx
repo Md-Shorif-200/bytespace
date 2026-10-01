@@ -22,7 +22,7 @@ const FeaturedCourses = () => {
         </div>
 
         {/* Grid Container for Cards */}
-        <div className="mt-16 flex flex-wrap justify-center gap-10">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 xl:gap-10">
           {coursesData.map((course) => (
             <FeaturedCourseCard key={course.id} course={course} />
           ))}

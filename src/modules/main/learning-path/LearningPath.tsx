@@ -5,22 +5,21 @@ import { learningPaths } from "./data";
 
 const LearningPath = () => {
   return (
-    <section className="custom_padding_t">
+    <section className="mt-12 lg:mt-16">
       <Container>
         <CustomSectionHeading
           title="Explore Diverse Learning Paths at Bytespace"
           description="At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories."
-          titleSize="text-[36px]"
           descriptionSize="text-[18px]"
         />
 
         {/* Cards row */}
-        <div className="flex flex-wrap items-center justify-center gap-8">
+        <div className="grid grid-cols-1 min-[400px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4  xl:gap-8">
           {learningPaths.map((item) => (
             // One card
             <div
               key={item.id}
-              className="flex h-[167px] w-[167px] flex-col items-center justify-center gap-2 rounded-3xl border border-[#CED0D3] bg-white p-4"
+              className="flex h-[167px] w-full xl:w-[167px] flex-col items-center justify-center gap-2 rounded-3xl border border-[#CED0D3] bg-white p-4"
             >
               {/* Circle with icon */}
               <div className="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-primary p-3">
